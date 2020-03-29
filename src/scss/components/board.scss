@@ -1,0 +1,49 @@
+@import "../variables";
+
+.board{
+    background-color: $board-background;
+    width: 80vw;
+    min-height: 60vh;
+    margin: 20vh auto;
+    border: 5px solid $border-board;
+    border-radius: 10px;
+    &-title{
+        color: $headers-font-color;
+        font-size: $board-title-size;
+        text-align: center;
+        font-family: 'Handlee', cursive;
+    }
+    &-container{
+        display: flex;
+        justify-content: space-around;
+        padding: 5px;
+    }
+    &-section{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &-button{
+            background-color: transparent;
+            outline: none;
+            border: none;
+            margin-left: 10px;
+            &:hover::after{
+                color: $icon-hover;
+            }
+            &::after{
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: "\f055";
+                font-size: $add-card-icon-size;
+                color: $add-card-icon;
+                cursor: pointer;
+            }
+        }
+        > h2{
+            font-family: 'Handlee', cursive;
+            font-size: $section-title-size;   
+        }
+    }
+     
+}

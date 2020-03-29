@@ -1,0 +1,27 @@
+@import "../variables";
+
+.sticker-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.sticker-section{
+    width: 100%;
+    margin: 5px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sticker{
+    background-color: $first-sticker-color;
+    min-height: 50px;
+    width: 80%;
+    margin: 5px;
+    outline: none;
+    border: 1px solid $first-sticker-color;
+    border-radius: 5px;
+    color: $sticker-font-color;
+    font-family: 'Handlee', cursive;
+    cursor: pointer;
+}
