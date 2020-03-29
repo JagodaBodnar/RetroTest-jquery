@@ -5,16 +5,7 @@ $(document).ready(function(){
          $(".board-section-button").click(function(e){
              let buttonAttr = $(e.target).attr('data-value');
              $('.sticker-section[data-target='+buttonAttr+']').append('<p></p>');
-             $('p').addClass('sticker').attr;
-            switch(buttonAttr){
-                case 1: $("p").addClass('sticker-one');
-                break;
-                case 2: $(".sticker").css("background-color", "blue");
-                break;
-                case 3: $(".sticker").css("background-color", "green");
-                break;
-                default: $(".sticker").css("background-color", "red");
-             };
+             $('p').addClass('sticker');
              $('.sticker').draggable({
                 revert: 'invalid',
                 cursor: "move",
@@ -24,8 +15,6 @@ $(document).ready(function(){
                  }
               });
               $('.sticker-section' ).droppable({
-                 activeClass: "ui-hover",
-                 hoverClass: "ui-active",
                  accept: '.sticker',
                  drop: function(event, ui) {
                   $(this)
