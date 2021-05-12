@@ -8,7 +8,7 @@
     "css-loader": "^3.4.2",
     "jquery": "^3.4.1",
     "node-sass": "^4.13.1",
-    "postcss": "^7.0.27",
+    "postcss": "^8.2.10",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3"
